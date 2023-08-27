@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5bef2ebc-308e-4429-9d95-98d548d982ee" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2OXjeEbYA0srY6k7RzJnkJaVQrV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\phpstudy_pro\WWW\qicai" />
+      <recent name="G:\p\phpstudy_pro\WWW\learn4" />
+      <recent name="C:\phpstudy_pro\WWW\learn4" />
+      <recent name="C:\phpstudy_pro\WWW\learn4\inc" />
+      <recent name="D:\phpstudy_pro\WWW\learn4\CSS" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\phpstudy_pro\WWW\qicai\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5bef2ebc-308e-4429-9d95-98d548d982ee" name="变更" comment="" />
+      <created>1681713913826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681713913826</updated>
+      <workItem from="1681713914938" duration="1230000" />
+      <workItem from="1681972953755" duration="6459000" />
+      <workItem from="1682300093353" duration="9149000" />
+      <workItem from="1682578331866" duration="7447000" />
+      <workItem from="1683182553301" duration="2664000" />
+      <workItem from="1683250579698" duration="1167000" />
+      <workItem from="1683272175016" duration="967000" />
+      <workItem from="1683787603176" duration="1304000" />
+      <workItem from="1684133195767" duration="6855000" />
+      <workItem from="1685119892071" duration="26000" />
+      <workItem from="1685119934427" duration="297000" />
+      <workItem from="1685158888839" duration="7173000" />
+      <workItem from="1685179502734" duration="894000" />
+      <workItem from="1685258458970" duration="1935000" />
+      <workItem from="1685342064379" duration="1272000" />
+      <workItem from="1685343869724" duration="2659000" />
+      <workItem from="1685346555282" duration="2643000" />
+      <workItem from="1685600886339" duration="1798000" />
+      <workItem from="1685602694246" duration="5701000" />
+      <workItem from="1686122406563" duration="1586000" />
+      <workItem from="1686207593333" duration="1989000" />
+      <workItem from="1686209598908" duration="4112000" />
+      <workItem from="1686739348511" duration="1563000" />
+      <workItem from="1686741161078" duration="229000" />
+      <workItem from="1688354026943" duration="2535000" />
+      <workItem from="1688359274677" duration="7182000" />
+      <workItem from="1688433439653" duration="2782000" />
+      <workItem from="1688452500314" duration="4578000" />
+      <workItem from="1688625094433" duration="5790000" />
+      <workItem from="1688631317271" duration="1044000" />
+      <workItem from="1693147792739" duration="787000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
