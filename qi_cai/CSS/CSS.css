@@ -1,0 +1,33 @@
+/*----------公共----------*/
+.myButtonLv{  /*绿底按钮*/
+
+}
+
+
+
+/*----------登录----------*/
+.mainLogin{ /*主div，居中*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+.signIn{
+    font-family:'Yu Gothic Light';
+    font-size:40px;
+    color: #748f62;
+    text-align: left;
+    width: 100px;
+}
+
+
+
+
+/*----------注册----------*/
+
+
+
+
+
+/*----------注册----------*/

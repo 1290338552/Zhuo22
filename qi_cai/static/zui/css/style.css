@@ -1,0 +1,41 @@
+﻿.modal-body .form-horizontal .form-group{
+		width:90% !important; 
+		margin:10px auto !important;
+}
+
+.panel-body .form-horizontal .form-group{
+		margin:10px auto !important;
+}
+.tag-center{
+	margin-left:auto;
+	margin-right:auto;
+	float:none;
+}
+.custom-input-group{
+	padding-left:15px !important;
+}
+.custom-input-group .form-control{
+	border-radius:4px !important;
+	height:auto;
+	min-height:32px;
+	
+}
+.custom-input-group .form-control-checkbox , .custom-input-group .form-control-radio{
+	border-color:transparent !important;
+	box-shadow:none;
+	/*padding-left:20px !important;*/
+}
+.custom-input-group .input-group-addon{
+	border:0px !important;
+	background:rgba(0,0,0,0) !important;
+}
+.custom-input-group .input-group-addon i{
+	font-size:9px;
+}
+.tooltip-inner{
+	max-width:500px;
+}
+.fmenu-title{
+	font-size:15px;
+	font-weight:bold;
+}

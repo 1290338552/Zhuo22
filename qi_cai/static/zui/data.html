@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>用户列表-页面演示 zui-admin</title>
+    <!-- zui css -->
+    <link rel="stylesheet" href="dist/css/zui.min.css">
+    <link rel="stylesheet" href="dist/theme/blue.css">
+    <!-- app css -->
+    <link rel="stylesheet" href="css/app.css">
+    <!-- jquery js -->
+    <script src="dist/lib/jquery/jquery.js"></script>
+    <!--[if lt IE 9]>
+  <script src="dist/lib/ieonly/html5shiv.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="dist/lib/ieonly/respond.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+  <script src="dist/lib/ieonly/excanvas.js"></script>
+<![endif]-->
+    <link href="dist/lib/datagrid/zui.datagrid.min.css" rel="stylesheet">
+
+    
+</head>
+<body>
+<div id="datagridExample" class="datagrid" data-ride="datagrid">
+	<div class="input-control search-box search-box-circle has-icon-left has-icon-right" id="searchboxExample2" style="margin-bottom: 10px; max-width: 300px">
+    <input id="inputSearchExample2" type="search" class="form-control search-input" placeholder="搜索">
+    <label for="inputSearchExample2" class="input-control-icon-left search-icon"><i class="icon icon-search"></i></label>
+    <a href="#" class="input-control-icon-right search-clear-btn"><i class="icon icon-remove"></i></a>
+  </div>
+  <div class="datagrid-container"></div>
+	
+</div>
+
+<div class="switch">
+  <input type="checkbox">
+  <label>夜间模式</label>
+</div>
+<div id="accordion">
+  <p>
+    <a href="#collapseExample1" data-toggle="collapse" data-parent="#accordion" class="btn btn-link">折叠 1</a>
+  </p>
+  <div class="collapse in" id="collapseExample1">
+    <div class="bg-primary with-padding">
+      <p>被折叠元素内容。</p>
+      <p>多个触发元素可以指向同一个折叠内容。</p>
+    </div>
+  </div>
+  <p>
+    <a href="#collapseExample2" data-toggle="collapse" data-parent="#accordion" class="btn btn-link collapsed">折叠 2</a>
+  </p>
+  <div class="collapse" id="collapseExample2">
+    <div class="bg-success with-padding">
+      <p>被折叠元素内容。</p>
+      <p>多个触发元素可以指向同一个折叠内容。</p>
+    </div>
+  </div>
+  <p>
+    <a href="#collapseExample3" data-toggle="collapse" data-parent="#accordion" class="btn btn-link collapsed">折叠 3</a>
+  </p>
+  <div class="collapse" id="collapseExample3">
+    <div class="bg-danger with-padding">
+      <p>被折叠元素内容。</p>
+      <p>多个触发元素可以指向同一个折叠内容。</p>
+    </div>
+  </div>
+</div>
+<nav class="menu" data-ride="menu" style="width: 200px">
+  <ul id="treeMenu" class="tree tree-menu" data-ride="tree">
+    <li><a href="#"><i class="icon icon-th"></i>首页</a></li>
+    <li><a href="#"><i class="icon icon-user"></i>个人资料</a></li>
+    <li>
+      <a href="#"><i class="icon icon-time"></i>更新时间</a>
+      <ul>
+        <li><a href="#">今天</a></li>
+        <li><a href="#">明天</a></li>
+        <li><a href="#">昨天</a></li>
+        <li><a href="#">本周</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="icon icon-trash"></i>垃圾篓</a></li>
+    <li><a href="#"><i class="icon icon-list-ul"></i>全部</a></li>
+    <li class="open">
+      <a href="#"><i class="icon icon-tasks"></i>状态</a>
+      <ul>
+        <li>
+          <a href="#"><i class="icon icon-circle-blank"></i>已就绪</a>
+          <ul>
+            <li><a href="#">已取消</a></li>
+            <li><a href="#">已关闭</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#"><i class="icon icon-play-sign"></i>进行中</a></li>
+        <li><a href="#"><i class="icon icon-ok-sign"></i>已完成</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+<ul class="tree" data-ride="tree">
+  <li>
+    <a href="#">水果</a>
+    <ul>
+      <li><a href="#">苹果</a></li>
+      <li>
+        <a href="#">热带水果</a>
+        <ul>
+          ...
+        </ul>
+      </li>
+      <li><a href="#">梨子</a></li>
+      ...
+    </ul>
+  </li>
+  <li><a href="#">粥饭</a></li>
+  ...
+</ul>
+    <!-- zui js -->
+    <script src="dist/js/zui.min.js"></script>
+    
+<script src="dist/lib/datagrid/zui.datagrid.min.js"></script>
+    <!-- app js -->
+    <script src="js/app.js"></script>
+    <script>
+    	/* 初始化数据表格 */
+$('#datagridExample').datagrid({
+    dataSource: {
+        cols:[
+            {name: 'time', label: '时间', width: 132},
+            {name: 'hero', label: '英雄', width: 134},
+            {name: 'action', label: '动作', width: 300},
+            {name: 'target', label: '目标', width: 400},
+            {name: 'desc', label: '描述', width: 500}
+        ],
+        array:[
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王1。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀2。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖3。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王4。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀5。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖6。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王7。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀8。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖9。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王10。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀11。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖12。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王13。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀15。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。16'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀17。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。18'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王19。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀20。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。'},
+            {time: '00:11:12', hero:'幻影刺客', action: '击杀', target: '斧王', desc: '幻影刺客击杀了斧王。'},
+            {time: '00:13:22', hero:'幻影刺客', action: '购买了', target: '隐刀', desc: '幻影刺客购买了隐刀。'},
+            {time: '00:19:36', hero:'斧王', action: '购买了', target: '黑皇杖', desc: '斧王购买了黑皇杖。'},
+            {time: '00:21:43', hero:'力丸', action: '购买了', target: '隐刀', desc: '力丸购买了隐刀。'}
+        ]
+    },
+    // ... 其他初始化选项
+    states: {
+        pager: {page: 1, recPerPage: 50},
+
+        fixedLeftUntil: 0,    // 固定左侧第一列
+        //fixedRightFrom: 0,   // 从第12列开始固定到右侧
+        fixedTopUntil: 0,     // 固定顶部第一行（标题行）
+        fixedBottomFrom: 100, // 从第100行（在此例中是最后一行）开始固定到底部
+    },
+    sortable: true
+});
+// 手动通过点击模拟高亮菜单项
+$('#treeMenu').on('click', 'a', function() {
+    $('#treeMenu li.active').removeClass('active');
+    $(this).closest('li').addClass('active');
+});
+    </script>
+    
+</body>
+</html>

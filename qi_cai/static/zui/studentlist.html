@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>用户列表-页面演示 zui-admin</title>
+<!-- zui css -->
+    <link href="dist/css/zui.min.css" rel="stylesheet">
+	<link href="dist/lib/datagrid/zui.datagrid.min.css" rel="stylesheet">
+    <link href="dist/lib/chosen/chosen.min.css" rel="stylesheet">
+	<link href="dist/lib/datatable/zui.datatable.min.css" rel="stylesheet">
+<link href="dist/lib/chosenicons/zui.chosenicons.min.css" rel="stylesheet">
+<link href="dist/lib/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+
+ <!-- jQuery (ZUI中的Javascript组件依赖于jQuery) -->
+<script src="dist/lib/jquery/jquery.js"></script>
+<!-- ZUI Javascript组件 -->
+<script src="dist/js/zui.min.js"></script>
+<script src="dist/lib/datagrid/zui.datagrid.min.js"></script>
+<script src="dist/lib/datatable/zui.datatable.min.js"></script>
+<script src="dist/lib/chosen/chosen.min.js"></script>
+<script src="dist/lib/chosenicons/zui.chosenicons.min.js"></script>
+<script src="dist/lib/datetimepicker/datetimepicker.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content-wrapper">
+    <div class="content-header">
+      <ul class="breadcrumb">
+        <li> <i class="icon icon-home"></i> </li>
+        <li class="active">用户列表</li>
+      </ul>
+    </div>
+    <div class="content-body">
+      <div class="container-fluid">
+        <div class="panel">
+          <div class="panel-heading">
+            <div class="panel-title">用户列表</div>
+          </div>
+          <div class="panel-body">
+            <div class="table-tools" style="margin-bottom: 15px;">
+              <div class="pull-right" style="width: 250px;">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="关键字">
+                  <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">搜索</button>
+                  </span> </div>
+              </div>
+              <div class="tools-group">
+                <button id="add" onClick="javascript:window.location.href='studentadd.html'" type="button"  class="btn btn-success">
+                <i class="icon icon-check-circle"></i> 新增</button >
+              
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="collapse" data-target="#collapseExample">
+				   高级查询 
+				</button>
+		
+              
+                <button type="button" onClick="delall()" class="btn btn-danger"><i class="icon icon-remove-sign" ></i> 删除全部</button >
+             
+             
+            </div>
+            
+          
+            
+         
+            
+             <table id="collapseExample" class="table datatable collapse">
+               
+  <tbody>
+
+  
+    <tr><td><select data-placeholder="使用拼音检索，试试“m”或“xm”" class="chosen-select form-control" tabindex="2">
+				  <option value=""></option>
+				  <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option>
+                   <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option> <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option>
+                  
+                  
+				</select></td>
+    <td><select data-placeholder="使用拼音检索，试试“m”或“xm”" class="chosen-select form-control" tabindex="2">
+				  <option value=""></option>
+				  <option value="cat" data-keys="xiaomao xm 猫科动物">小猫</option>
+				  <option value="fish" data-keys="jinyu jy">金鱼</option>
+				  <option value="dragon" data-keys="long">龙</option>
+				  <option value="mammoth" data-keys="mengma mm">猛犸</option>
+				  <option value="gollum" data-keys="gulu gl 神话">咕噜</option>
+				</select></td>
+                    <td><input type="text" class="form-control form-datetime" style="width:100%; float:left; margin-right:5px;" placeholder="开始日期" readonly>
+				</td>
+                    <td><input type="text" class="form-control form-datetime" style="width:100%; float:left; margin-right:5px;" placeholder="结束日期" readonly></td>
+    </tr>
+
+  </tbody>
+             </table>
+            </div>
+            <!-- 使用一个div来显示数据表格 -->
+            <div id="datagridPageExample" class="datagrid">
+              <div class="datagrid-container"></div>
+              <div class="pager"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+var tabgrid;
+$(function () {
+ /* 使用选项选项来初始化数据 */
+   $('select.chosen-select').chosen({
+		no_results_text: '没有找到',    // 当检索时没有找到匹配项时显示的提示文本
+		search_contains: true,         // 从任意位置开始检索
+		allow_single_deselect: true,
+		width: '100%'
+	});
+	
+	$(".form-datetime").datetimepicker(
+	{
+		weekStart: 1,
+		todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+		showMeridian: 1,
+		format: "yyyy-mm-dd hh:ii"
+	});
+
+
+
+
+ $('#datagridPageExample').datagrid({
+	  checkable: true,//复选框
+    checkByClickRow: true,//多选功能
+	 	configs: {
+			R0C0: {label: '#'} 
+    },
+		sortable: true,
+    dataSource: {
+        cols:[
+		 
+            {name: 'time', label: '时间', width: 132},
+            {name: 'hero', label: '英雄', width: 134},
+            {name: 'action', label: '动作', width: 109},
+            {name: 'target', label: '目标', width: 109},
+            {name: 'desc', label: '描述', width: 287},
+            {name: 'operating', label: '操作', width: 200,  html:true, valueOperator: {
+                    getter: function(dataValue, cell, dataGrid) {
+                        return "<button type='button' style='padding:2px 10px; '  class='btn btn-primary'><i class='icon icon-edit'  ></i> 编辑</button >&nbsp;&nbsp;&nbsp;&nbsp;<button type='button' onClick='del()' style='padding:2px 10px;'  class='btn btn-danger'><i class='icon icon-remove-sign'  ></i> 删除</button >";
+                    }
+                }}
+        ],
+      remote: function(params) {
+            return {
+                // 原创请求地址
+                url: 'data.json',
+                // 请求类型
+                type: 'GET',
+                // 数据类型
+                dataType: 'json'
+            };
+        }
+    },
+    states: {
+        pager: {page: 1, recPerPage: 20}
+    }
+});
+  tabgrid = $('#datagridPageExample').data('zui.datagrid');
+});
+
+
+function del(){
+	
+(new $.zui.ModalTrigger({title:'温馨提示',moveable:true,custom: '您是否要删除该数据？<div class="modal-footer" style="border:0px;"><button type="button" class="btn btn-default" data-dismiss="modal">取消</button><button type="button" class="btn btn-primary">确定</button>'})).show();	
+}
+
+function delall(){
+	var selectItems=tabgrid.getCheckItems();
+(new $.zui.ModalTrigger({title:'温馨提示',moveable:true,backdrop:false,custom: '您是否要删除所选数据？<div class="modal-footer" style="border:0px;"><button type="button" class="btn btn-default" data-dismiss="modal">取消</button><button type="button" class="btn btn-primary">确定</button>'})).show();	
+}
+
+</script>
+</body>
+</html>
